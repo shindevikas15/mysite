@@ -1,0 +1,44 @@
+
+.jumbotron h2 {margin-top:0;}
+.jumbotron {
+  position:relative;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+}
+
+
+.header_area
+{background:;
+}
+
+
+
+
+.aa {
+ background-image: url("https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_960_720.jpg");
+ background-color: #cccccc;
+  height: 100%;
+
+  background-position: center;
+  background-repeat: y-repeat;
+  background-size: cover;
+
+}
+
+.navbar-default {
+  background:transparent;
+  background-image:none;
+  border-color:transparent;
+  box-shadow:none;
+}

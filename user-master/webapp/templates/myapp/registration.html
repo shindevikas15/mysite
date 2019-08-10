@@ -1,0 +1,15 @@
+
+{% extends 'myapp/base.html' %}
+{% block body %}
+<div class="jumbotron" align="center" style=" background:transparent; background-image:none;border-color:transparent; box-shadow:none; >
+    <div class="container">
+        <h1>WELCOME TO REGISTRATION PAGE...!!</h1>
+        <form method="post">
+            {{form.as_p}}
+            {%csrf_token%}
+            <input type="submit" style=" margin: auto; width: 150px; height: 50px" class="btn btn-success" value="register here">
+        </form>
+    </div>
+
+</div>
+{% endblock %}

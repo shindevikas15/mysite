@@ -1,0 +1,46 @@
+{% extends 'myapp/base.html' %}
+
+{% block body %}
+
+
+<div class="container"align="center">
+
+	<div class="col-sm-6" style="margin-top: 50px">
+		<h2 class="text-center">Mail Sending Page..!!</h2>
+		<hr>
+		<form action="" method="post" class="">
+			{% csrf_token %}
+			<div class="col-sm-6">
+				{{ form.name.label_tag }}
+				{{ form.name.errors }}
+				{{ form.name }}
+			</div>
+			<div class="col-sm-6">
+				{{ form.email.label_tag }}
+				{{ form.email.errors }}
+				{{ form.email }}
+			</div>
+			<div class="col-sm-12">
+				{{ form.subject.label_tag }}
+				{{ form.subject.errors }}
+				{{ form.subject }}
+			</div>
+
+
+			<div class="col-sm-12">
+				{{ form.message.label_tag }}
+				{{ form.message.errors }}
+				{{ form.message }}
+			</div>
+
+
+			<div class="col-sm-12" style="margin-top: 20px">
+				<button type="submit" name="save" class="btn btn-primary">submit </button>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}
+
+
+
